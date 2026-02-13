@@ -1,0 +1,32 @@
+/* Smooth transitions for panels */
+#bottom-panel {
+    max-height: 80vh;
+}
+
+/* Hide scrollbar for cleaner look */
+#results-section::-webkit-scrollbar {
+    width: 6px;
+}
+#results-section::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+#results-section::-webkit-scrollbar-thumb {
+    background: #ccc; 
+    border-radius: 10px;
+}
+
+/* Map marker animation simulation */
+@keyframes pulse-ring {
+    0% { transform: scale(0.33); }
+    80%, 100% { opacity: 0; }
+}
+
+.map-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
